@@ -7,7 +7,7 @@
 <body onload="document.registration.userid.focus();">
 <h1>Registration Form</h1>
 <div>
-<form name='registration' onSubmit="return formValidation();">
+<form name='registration' onSubmit="return formValidate();">
 <label for="userid">User id:*</label>
 <input type="text" name="userid" size="12" />
 <label for="passid">Password:*</label><br>
@@ -45,8 +45,8 @@
 <label for="email">Email:*</label>
 <input type="text" name="email" size="50" /><br><br>
 <label id="gender">Sex:*</label>
-<input type="radio" name="sex" value="Male" /><span>Male</span>
-<input type="radio" name="sex" value="Female" /><span>Female</span><br><br>
+<input type="radio" name="sex" id="m" value="Male" /><span>Male</span>
+<input type="radio" name="sex" id="f" value="Female" /><span>Female</span><br><br>
 <label>Language:*</label>
 <input type="checkbox" name="en" value="en"  /><span>English</span>
 <input type="checkbox" name="tam" value="tam" /><span>tamil</span>
